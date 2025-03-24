@@ -52,10 +52,17 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ### Step 3: Install Dependencies
 ```sh
 pip install -r requirements.txt
+cd library
 ```
 
-### Step 4: Configure the Database
-Edit the `settings.py` file and update the `DATABASES` section with your MySQL credentials.
+### Step 4: Create the Database
+Before applying migrations, create a MySQL database manually. Run the following command in your MySQL shell:
+
+```sql
+CREATE DATABASE library_db;
+```
+
+Then, edit the `settings.py` file and update the `DATABASES` section with your MySQL credentials.
 
 ```python
 DATABASES = {
@@ -89,3 +96,4 @@ python manage.py runserver
 
 ### Step 8: Access the Application
 Open a web browser and go to `http://127.0.0.1:8000/` to access the system.
+
