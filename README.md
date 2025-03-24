@@ -51,8 +51,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ### Step 3: Install Dependencies
 ```sh
-pip install -r requirements.txt
 cd library
+pip install -r requirements.txt
 ```
 
 ### Step 4: Create the Database
