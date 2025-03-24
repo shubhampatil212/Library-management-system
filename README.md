@@ -39,8 +39,8 @@ The book model stores details like title, author, published date, and ISBN. The 
 
 ### Step 1: Clone the Repository
 ```sh
-git clone <repository_url>
-cd <repository_folder>
+git clone https://github.com/shubhampatil212/Library-management-system
+cd Library-management-system
 ```
 
 ### Step 2: Create a Virtual Environment
